@@ -1,18 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
 
-bool isPerfectSquare (int n){
-    int root = sqrt(n);
-    if((root * root) == n){
-        return true;
-    }
-    return false;
-}
-
-int main (){
-    int n;
-    cin >> n;
-    int ans = isPerfectSquare(n);
-    cout << ans << '\n';
-    return 0;
+bool is_perfect_square(int64_t n){
+    int64_t s = int64_t(round(sqrt(n)));
+    return s * s == n;
 }
